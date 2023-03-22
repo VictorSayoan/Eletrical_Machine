@@ -11,8 +11,8 @@ theta = 36.86 * 2*pi/180;
 Xs = 1.0;
 
 % Cálculo do v_phase para cada Ia:
-for ii = 1:21
-    V_phase = sqrt(Ea^2 -(Xs * Ia(ii)*cos(theta))^2) - (Xs * Ia(ii)*sin(theta));
+for i = 1:21
+    V_phase = sqrt(Ea^2 -(Xs * Ia(i)*cos(theta))^2) - (Xs * Ia(i)*sin(theta));
 end
 
 Vt = V_phase * sqrt(3);
